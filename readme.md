@@ -1,4 +1,4 @@
-# this is a very small application with Python Flask framework and AMP front end template
+# This is a very small application with Python Flask framework and AMP front end template
 
 Flask is a light weight frame work for Python. It is very fast to build and run. We have used flask, mysql as database and front end template with AMP.
 
