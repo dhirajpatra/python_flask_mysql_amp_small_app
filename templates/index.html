@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Enter the Content</title>
+
+{% endblock %}
+
+{% block body %}
+
+<form method="POST" class="simple-form form-signin" action="/">
+    <div class="row">
+        <div class="col-md-12">
+    <H1>Enter your details </H1>
+    </div> 
+</div>
+<div class="form-group">
+<div class="row">
+    <div class="col-md-12">
+    <input type = "text" name= "title" id="title" placeholder="Title" />
+    </div> 
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+    <div class="col-md-12">
+    <textarea name="content" id="content" placeholder="Content"></textarea>
+    </div>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+    <div class="col-md-12">
+    <input type = "submit">
+</div>
+</div>
+</div>
+</form>
+
+<div class="header"><b>CMS</b></div>
+
+{% for data in data %}
+
+<div class="row">
+    <div class="col-md-6">
+        {{ data['title'] }}
+    </div>
+    <div class="col-md-6">
+        {{ data['content'] }}
+    </div>    
+</div>
+<hr>
+
+{% endfor %}
+
+{% endblock %}
